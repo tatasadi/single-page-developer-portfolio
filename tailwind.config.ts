@@ -7,7 +7,15 @@ const config: Config = {
 		'./app/**/*.{js,ts,jsx,tsx,mdx}',
 	],
 	theme: {
-		extend: {},
+		extend: {
+			colors: {
+				black: 'hsla(0, 0%, 8%, 1)',
+				'dark-grey': 'hsla(0, 0%, 14%, 1)',
+				green: 'hsla(154, 71%, 59%, 1)',
+				grey: 'hsla(0, 0%, 85%, 1)',
+				red: 'hsla(7, 100%, 68%, 1)',
+			},
+		},
 	},
 	plugins: [],
 }

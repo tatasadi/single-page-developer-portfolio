@@ -11,7 +11,9 @@
 		"build-storybook": "storybook build"
 	},
 	"dependencies": {
+		"classnames": "^2.5.1",
 		"next": "14.1.0",
+		"prettier-plugin-tailwindcss": "^0.5.11",
 		"react": "^18",
 		"react-dom": "^18"
 	},
@@ -21,6 +23,7 @@
 		"@storybook/addon-interactions": "^7.6.13",
 		"@storybook/addon-links": "^7.6.13",
 		"@storybook/addon-onboarding": "^1.0.11",
+		"@storybook/addon-styling-webpack": "^0.0.6",
 		"@storybook/blocks": "^7.6.13",
 		"@storybook/nextjs": "^7.6.13",
 		"@storybook/react": "^7.6.13",
@@ -36,5 +39,11 @@
 		"storybook": "^7.6.13",
 		"tailwindcss": "^3.3.0",
 		"typescript": "^5"
+	},
+	"prettier": {
+		"plugins": [
+			"prettier-plugin-tailwindcss"
+		],
+		"semi": false
 	}
 }
