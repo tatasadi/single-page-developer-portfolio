@@ -29,7 +29,7 @@ export default function RootLayout({
       <body
         className={classNames(
           spaceGrotesk.className,
-          "flex min-h-screen flex-col items-center justify-center",
+          "flex min-h-screen flex-col items-center justify-center bg-black text-white",
         )}
       >
         {children}

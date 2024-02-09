@@ -10,8 +10,8 @@ const Paragraph: React.FC<ParagraphProps> = ({ className, children }) => {
   return (
     <p
       className={classNames(
+        "text-lg font-medium leading-7 text-grey",
         className,
-        "text-lg font-medium leading-7 text-yellow-600",
       )}
     >
       {children}

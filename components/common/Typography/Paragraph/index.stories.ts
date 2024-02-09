@@ -5,7 +5,6 @@ const meta = {
   title: "Components/Typography/Paragraph",
   component: Paragraph,
   parameters: {
-    // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
     layout: "centered",
     design: {
       type: "figspec",
@@ -21,6 +20,5 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {
   args: {
     children: "This is a paragraph.",
-    className: "bg-yellow-600",
   },
 }
