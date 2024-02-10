@@ -49,7 +49,7 @@ const HeroSection: React.FC<IProps> = ({ className, ...props }) => {
           </picture>
         </div>
       </div>
-      <div className="relative z-10 mx-4 mb-20 mt-10 flex flex-col items-center gap-6 text-center sm:mb-[3.75rem] sm:ml-8 sm:mr-[18.1875rem] sm:mt-[5.625rem] sm:items-start sm:gap-0 sm:text-left lg:ml-[10.3125rem] lg:mr-[35.375rem] lg:mt-[7.9375rem]">
+      <div className="relative z-10 mx-4 mb-20 mt-10 flex flex-col items-center gap-6 text-center sm:mb-[3.75rem] sm:ml-8 sm:mr-[18.1875rem] sm:mt-[5.625rem] sm:items-start sm:gap-0 sm:text-left lg:mb-[13.6875rem] lg:ml-[10.3125rem] lg:mr-[35.375rem] lg:mt-[7.9375rem]">
         <Heading level={1} size="xl">
           Nice to meet you! I&apos;m{" "}
           <span className="border-b-4 border-green sm:border-b-[0.375rem]">
