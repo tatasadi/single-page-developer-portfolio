@@ -23,7 +23,7 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <div>
-      <div className="group relative cursor-pointer">
+      <div className="group relative">
         <picture>
           <source
             srcSet={`/images/thumbnail-${imgName}-small.webp`}
@@ -42,13 +42,25 @@ const Card: React.FC<CardProps> = ({
             height={400}
           />
         </picture>
-        <div className="absolute inset-0 hidden flex-col items-center justify-center gap-12 bg-black/75 group-hover:flex">
-          <Button type="link" href={projectUrl} target="_blank">
-            View project
-          </Button>
-          <Button type="link" href={sourceCodeUrl} target="_blank">
-            View code
-          </Button>
+        <div className="hidden cursor-pointer lg:block">
+          <div className="absolute inset-0 hidden flex-col items-center justify-center gap-12 bg-black/75 group-hover:flex">
+            <Button
+              type="link"
+              href={projectUrl}
+              target="_blank"
+              aria-label={`View ${imgName}`}
+            >
+              View project
+            </Button>
+            <Button
+              type="link"
+              href={sourceCodeUrl}
+              target="_blank"
+              aria-label={`${imgName} Source code`}
+            >
+              View code
+            </Button>
+          </div>
         </div>
       </div>
       <Heading level={3} size="m" className="mt-5">
@@ -56,8 +68,28 @@ const Card: React.FC<CardProps> = ({
       </Heading>
       <div className="mt-[0.4375rem] flex gap-[1.125rem]">
         {tags.map((tag) => (
-          <Paragraph key={tag}>{tag}</Paragraph>
+          <Paragraph key={tag} className="uppercase">
+            {tag}
+          </Paragraph>
         ))}
+      </div>
+      <div className="mt-5 flex items-center gap-[1.875rem] sm:gap-8 lg:hidden">
+        <Button
+          type="link"
+          href={projectUrl}
+          target="_blank"
+          aria-label={`View ${imgName}`}
+        >
+          View project
+        </Button>
+        <Button
+          type="link"
+          href={sourceCodeUrl}
+          target="_blank"
+          aria-label={`${imgName} Source code`}
+        >
+          View code
+        </Button>
       </div>
     </div>
   )
