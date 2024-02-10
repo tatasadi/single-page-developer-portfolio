@@ -20,7 +20,7 @@ const Heading: React.FC<HeadingProps> = ({
     size === "m"
       ? "text-[1.5rem] leading-8"
       : size === "l"
-        ? "text-[2rem] leading-[2.5rem] -tracking-[0.0625rem] md:text-[3rem] md:leading-[3.5rem] md:-tracking-[0.09375rem]"
+        ? "text-[2rem] leading-[2.5rem] -tracking-[0.0625rem] sm:text-[3rem] sm:leading-[3.5rem] sm:-tracking-[0.09375rem]"
         : "text-[2.5rem] leading-[2.5rem] -tracking-[0.071rem] sm:text-[4.5rem] sm:leading-[4.5rem] sm:-tracking-[0.12781rem] lg:text-[5.5rem] lg:leading-[5.5rem] lg:-tracking-[0.15625rem]"
 
   return (
