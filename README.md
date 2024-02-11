@@ -38,7 +38,25 @@ Users should be able to:
 
 ### Screenshots
 
-![](./screenshot1.png) ![](./screenshot2.png)
+Desktop:
+
+![](./screenshot1.png)
+
+![](./screenshot2.png)
+
+Tablet:
+
+![](./screenshot3.png)
+
+![](./screenshot4.png)
+
+Mobile:
+
+![](./screenshot5.png)
+
+![](./screenshot6.png)
+
+![](./screenshot7.png)
 
 ### Links
 
