@@ -4,15 +4,16 @@ import React, { ReactNode } from "react"
 interface ButtonProps {
   className?: string
   children: ReactNode
-  type: "button" | "link"
+  isLink?: boolean
   href?: string
   target?: string
+  type?: "button" | "submit" | "reset"
 }
 
 const Button: React.FC<ButtonProps> = ({
   className,
   children,
-  type,
+  isLink = false,
   ...props
 }) => {
   const classes = classNames(
@@ -20,7 +21,7 @@ const Button: React.FC<ButtonProps> = ({
     className,
   )
 
-  if (type === "link") {
+  if (isLink) {
     return (
       <a className={classes} {...props}>
         {children}

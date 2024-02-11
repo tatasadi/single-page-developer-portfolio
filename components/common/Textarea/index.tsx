@@ -18,7 +18,8 @@ const Textarea: React.FC<TextareaProps> = ({
   errors,
   className = "",
 }) => {
-  const TextareaClasses = (errors?.length ?? 0) > 0 ? "border-red" : "border-white"
+  const TextareaClasses =
+    (errors?.length ?? 0) > 0 ? "border-red" : "border-white"
 
   return (
     <div
@@ -31,7 +32,7 @@ const Textarea: React.FC<TextareaProps> = ({
         name={name}
         placeholder={placeholder}
         className={classNames(
-          "hover:boder-green border-b bg-transparent pl-6 font-medium uppercase leading-[1.625rem] -tracking-[0.01388rem] text-white placeholder:opacity-50 focus:border-green focus:outline-none focus:ring-0 min-h-[6.6875rem] resize-none",
+          "hover:boder-green upperase min-h-[6.6875rem] w-full resize-none border-b bg-transparent pl-6 font-medium leading-[1.625rem] -tracking-[0.01388rem] text-white placeholder:opacity-50 focus:border-green focus:outline-none focus:ring-0",
           TextareaClasses,
         )}
         value={value}

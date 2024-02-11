@@ -45,7 +45,7 @@ const Card: React.FC<CardProps> = ({
         <div className="hidden cursor-pointer lg:block">
           <div className="absolute inset-0 hidden flex-col items-center justify-center gap-12 bg-black/75 group-hover:flex">
             <Button
-              type="link"
+              isLink
               href={projectUrl}
               target="_blank"
               aria-label={`View ${imgName}`}
@@ -53,7 +53,7 @@ const Card: React.FC<CardProps> = ({
               View project
             </Button>
             <Button
-              type="link"
+              isLink
               href={sourceCodeUrl}
               target="_blank"
               aria-label={`${imgName} Source code`}
@@ -75,7 +75,7 @@ const Card: React.FC<CardProps> = ({
       </div>
       <div className="mt-5 flex items-center gap-[1.875rem] sm:gap-8 lg:hidden">
         <Button
-          type="link"
+          isLink
           href={projectUrl}
           target="_blank"
           aria-label={`View ${imgName}`}
@@ -83,7 +83,7 @@ const Card: React.FC<CardProps> = ({
           View project
         </Button>
         <Button
-          type="link"
+          isLink
           href={sourceCodeUrl}
           target="_blank"
           aria-label={`${imgName} Source code`}

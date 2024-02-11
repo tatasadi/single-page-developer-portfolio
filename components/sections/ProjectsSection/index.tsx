@@ -69,7 +69,7 @@ const ProjectsSection: React.FC<IProps> = ({ className, ...props }) => {
         <Heading level={2} size="xl">
           Projects
         </Heading>
-        <Button type="button">Contact me</Button>
+        <Button>Contact me</Button>
       </div>
       <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-[3.75rem] lg:gap-x-[1.875rem] lg:gap-y-[4.3125rem]">
         {cards.map((card, index) => (

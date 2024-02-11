@@ -61,7 +61,7 @@ const HeroSection: React.FC<IProps> = ({ className, ...props }) => {
           Based in the UK, I’m a front-end developer passionate about building
           accessible web apps that users love.
         </Paragraph>
-        <Button type="button">Contact Me</Button>
+        <Button>Contact Me</Button>
       </div>
     </section>
   )

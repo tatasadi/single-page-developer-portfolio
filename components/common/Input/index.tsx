@@ -34,7 +34,7 @@ const Input: React.FC<InputProps> = ({
         type={type}
         placeholder={placeholder}
         className={classNames(
-          "hover:boder-green border-b bg-transparent pb-[1.0625rem] pl-6 font-medium uppercase leading-[1.625rem] -tracking-[0.01388rem] text-white placeholder:opacity-50 focus:border-green focus:outline-none focus:ring-0",
+          "hover:boder-green w-full border-b bg-transparent pb-[1.0625rem] pl-6 font-medium uppercase leading-[1.625rem] -tracking-[0.01388rem] text-white placeholder:opacity-50 focus:border-green focus:outline-none focus:ring-0",
           inputClasses,
         )}
         value={value}
