@@ -42,7 +42,7 @@ const ContactSection: React.FC<IProps> = ({ className, ...props }) => {
               />
               <Input
                 type="email"
-                placeholder="Email Address"
+                placeholder="Email"
                 name="email"
                 value=""
                 onChange={() => {}}

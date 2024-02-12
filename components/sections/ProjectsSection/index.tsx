@@ -61,7 +61,7 @@ const ProjectsSection: React.FC<IProps> = ({ className, ...props }) => {
     <section
       className={classNames(
         className,
-        "w-full px-4 pb-20 sm:px-8 sm:pb-[6.25rem] lg:px-[10.3125rem]",
+        "w-full px-4 pb-20 sm:px-8 sm:pb-[8.7rem] lg:px-[10.3125rem]",
       )}
       {...props}
     >

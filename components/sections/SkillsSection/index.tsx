@@ -39,7 +39,7 @@ const SkillsSection: React.FC<IProps> = ({ className, ...props }) => {
       )}
       {...props}
     >
-      <div className="grid w-full grid-cols-1 place-items-center gap-6 border-y border-white py-10 sm:grid-cols-2 sm:place-items-start sm:gap-[3.25rem] sm:border-b-0 sm:py-[3.25rem] lg:grid-cols-3 lg:gap-[3.625rem] lg:py-[4.5rem]">
+      <div className="grid w-full grid-cols-1 place-items-center gap-6 border-y border-white py-10 sm:grid-cols-2 sm:place-items-start sm:gap-[3.25rem] sm:border-b-0 sm:py-[3.25rem] lg:grid-cols-3 lg:gap-x-8 lg:gap-y-[3.6rem] lg:py-[4.5rem]">
         {skills.map((skill, index) => (
           <Skill
             key={index}

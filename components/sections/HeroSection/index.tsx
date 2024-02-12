@@ -15,7 +15,7 @@ const HeroSection: React.FC<IProps> = ({ className, ...props }) => {
   return (
     <section className={classNames(className, "")} {...props}>
       <div className="relative lg:px-[10.3125rem]">
-        <div className="absolute z-10 flex w-full flex-col items-center gap-5 pt-5 sm:relative sm:flex-row sm:justify-between sm:px-[1.875rem] sm:pt-[1.875rem]">
+        <div className="absolute z-10 flex w-full flex-col items-center gap-5 pt-5 sm:relative sm:flex-row sm:justify-between sm:pr-[1.875rem] sm:pt-[2.5rem]">
           <Logo />
           <SocialIcons />
         </div>
@@ -57,7 +57,7 @@ const HeroSection: React.FC<IProps> = ({ className, ...props }) => {
           </span>
           .
         </Heading>
-        <Paragraph className="max-w-[27.8125rem] sm:mb-[2.125rem] sm:mt-[4.125rem]">
+        <Paragraph className="max-w-[27.8125rem] sm:mb-[4.25rem] sm:mt-[2.5rem]">
           Based in the UK, I’m a front-end developer passionate about building
           accessible web apps that users love.
         </Paragraph>
